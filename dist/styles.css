@@ -1,0 +1,156 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+}
+.logoDbz {
+  background-image: url(./assets/img/75075037-764e-4b7a-83b0-71623d0221f1.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 50%;
+}
+header > h1 > span {
+  color: red;
+  font-size: 80px;
+}
+h1 {
+  font-size: 70px;
+  color: #eecb07;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+}
+main {
+  background-color: rgb(58, 57, 57);
+}
+
+#dbz {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 100px;
+  width: 100%;
+}
+
+figure {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0px;
+  background: url(./assets/img/89980.webp) no-repeat center center;
+  position: relative;
+}
+
+figure > img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+figure > img:hover {
+  transform: matrix3d(10px 5px, 0, 0, 0, 10px, 0, 0, 0, 0, 10px, 0, 0, 0, 0, 1);
+  transition: 1s;
+  height: 550px;
+  width: 110%;
+  top: -5%;
+  left: -5%;
+}
+figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #2c2c2c;
+  width: 100%;
+  height: 50%;
+}
+
+figcaption > h2 {
+  color: #eecb07;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+  text-align: center;
+  font-size: 50px;
+  margin: 0px;
+  z-index: 1;
+}
+figcaption h3 {
+  color: white;
+  padding: 0px 10px;
+}
+
+@media only screen and (min-width: 600px) and (max-width:1050px){
+  #dbz {
+    padding: 50px;
+    display: grid ;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 100px;
+    height: 100%;
+  }
+  header {
+    width: 100vw;
+    height: 200px;
+  }
+
+  main {
+    height: 100%;
+  }
+  figure {
+    width: 100%;
+    height: 80vh;
+  }
+
+  figcaption {
+    height: fit-content;
+  }
+  
+}
+
+@media only screen and (min-width: 350px) and (max-width:599px) {
+  
+  #dbz {
+    padding: 50px;
+    display: grid ;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr ;
+    grid-gap: 50px;
+    height: 100%;
+  }
+  header {
+    width: 100vw;
+    height: 100px;
+  }
+  figure {
+    height: 100vh;
+  }
+  figcaption h3 {
+    font-size: 15px;
+  }
+}
