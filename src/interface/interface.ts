@@ -11,3 +11,19 @@ export interface listCharactersDbz {
         affiliation: string,
     }[]
 }
+
+export interface listProducts {
+    dataProducts:{
+        category:{
+            name: string,
+            id: number,
+            image: string,
+        }[],
+        description: string,
+        id: number,
+        price: number,
+        title: string,
+        images: string[]
+    }[]
+    
+}
