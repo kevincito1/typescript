@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  background-color: rgb(58, 57, 57);
+}
+
+#dbz {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+  height: 90vh;
+}
+
+
+figure > img {
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  object-fit: contain;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  color: white;
+}
